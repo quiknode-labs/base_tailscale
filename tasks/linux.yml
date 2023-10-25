@@ -126,7 +126,7 @@
     verbosity: 2
 
 - name: Connect machine to tailscale
-  command: "tailscale up -authkey {{ tailscale_authkey }} --advertise-tags '{{ tailscale_tag_set }}'"
+  command: "tailscale up -authkey {{ tailscale_authkey }} --advertise-tags '{{ tailscale_tag_set }}' --timeout 120s"
   when:
     - status.rc|int != 0
     - not tailscale_router|bool
