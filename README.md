@@ -1,4 +1,5 @@
-[Archived]
+# [Archived]
+
 Archived in favor of https://github.com/quiknode-labs/ansible_role_tailscale
 
 # base_tailscale
